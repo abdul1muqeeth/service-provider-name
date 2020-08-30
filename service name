@@ -1,0 +1,6 @@
+#pip install phonenumbers
+import phonenumbers
+from phonenumbers import carrier
+MobileNo=input("Enter the Mobile Number with country code")
+service_provider=phonenumbers.parse(mobile)
+print(carrier.name_for_number(service_provider,"en"))
